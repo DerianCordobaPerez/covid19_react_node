@@ -2,13 +2,13 @@
   "name": "covid_19_web_page",
   "version": "0.0.1",
   "description": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --config webpack.config.js --watch --mode=development",
+    "dev:build-server": "NODE_ENV=development webpack --config webpack.server.js --mode=development -w",
     "start": "nodemon ./index.js",
-    "dev": "npm-run-all --parallel watch start"
+    "dev": "npm-run-all --parallel dev:build-server start watch"
   },
   "keywords": [
     "COVID-19",
@@ -25,7 +25,8 @@
     "react-router-dom": "^5.3.0",
     "sass": "^1.42.1",
     "webpack": "^5.57.0",
-    "webpack-cli": "^4.8.0"
+    "webpack-cli": "^4.8.0",
+    "webpack-node-externals": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",

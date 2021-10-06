@@ -1,11 +1,11 @@
-import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import JsRules from './rules/JsRules.js';
-import ImgRules from './rules/ImgRules.js';
-import StylesRules from './rules/StylesRules.js';
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const JsRules = require('./rules/JsRules.js');
+const ImgRules = require('./rules/ImgRules.js');
+const StylesRules = require('./rules/StylesRules.js');
 
-export default {
-    entry: './frontend/src/js/app.js',
+module.exports = {
+    entry: './frontend/src/js/index.js',
     output: {
         filename: '[name].bundle.js',
         path: path.resolve('frontend/public/js'),
