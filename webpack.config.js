@@ -5,7 +5,6 @@ import ImgRules from './rules/ImgRules.js';
 import StylesRules from './rules/StylesRules.js';
 
 export default {
-    mode: 'development',
     entry: './frontend/src/js/app.js',
     output: {
         filename: '[name].bundle.js',

@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --config webpack.config.js --watch"
+    "watch": "webpack --config webpack.config.js --watch --mode=development",
+    "start": "nodemon ./index.js",
+    "dev": "npm-run-all --parallel watch start"
   },
   "keywords": [
     "COVID-19",
@@ -15,6 +17,7 @@
   "author": "Ofilio Herdocia, Derian.",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -35,6 +38,7 @@
     "css-loader": "^6.3.0",
     "html-webpack-plugin": "^5.3.2",
     "nodemon": "^2.0.13",
+    "npm-run-all": "^4.1.5",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.3.0"
   }

@@ -1,1 +1,1 @@
-console.log('Prueba de Babel y WebPack');
+console.log('Prueba de Babel y WebPack con Nodemon');
