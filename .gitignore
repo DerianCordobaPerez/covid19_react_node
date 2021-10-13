@@ -1,4 +1,4 @@
 /node_modules
 /frontend/public/*
 .env
-index.js
+/index.js
