@@ -12,7 +12,7 @@ dotenv.config()
 const app = Express()
 
 app.use(cors())
-app.use(express.urlencoded({ extended: true }));
+app.use(Express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
   const app = ReactDOMServer.renderToString(<App />)
