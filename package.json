@@ -20,6 +20,9 @@
   ],
   "license": "ISC",
   "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.4",
     "@mui/material": "^5.0.2",
     "axios": "^0.22.0",
     "dotenv": "^10.0.0",
