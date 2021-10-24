@@ -1,14 +1,14 @@
 FROM node:latest
 
-WORKDIR /app
+RUN mkdir -p /usr/src/app
 
-COPY package.json ./
+WORKDIR /usr/src/app
 
-COPY package-lock.json ./
-
-COPY . .
+COPY package*.json ./
 
 RUN npm i --force
+
+COPY . .
 
 EXPOSE 8080
 
