@@ -4,11 +4,15 @@ import React from 'react'
 import ReactDOMServer from 'react-dom/server.js'
 import Express from 'express'
 import dotenv from 'dotenv'
+import cors from 'cors'
 
 import {App} from './frontend/src/js/App.jsx'
 
 dotenv.config()
 const app = Express()
+
+app.use(cors())
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
   const app = ReactDOMServer.renderToString(<App />)
