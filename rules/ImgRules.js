@@ -1,4 +1,4 @@
 module.exports = {
-    type: 'asset',
-    test: /\.(png|svg|jpg|jpeg|gif)$/i
+  type: 'asset',
+  test: /\.(png|svg|jpg|jpeg|gif)$/i,
 }
