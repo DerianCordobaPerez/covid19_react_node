@@ -1,3 +1,3 @@
 # Covid19 React Node
 
-* >License [MIT]()
+* >[LICENSE MIT](https://github.com/OfilioHA/covid19_react_node/blob/Master/LICENSE)
