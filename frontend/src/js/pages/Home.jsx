@@ -1,7 +1,10 @@
-export function Home(){
-    console.log('Prueba de Babel y WebPack con Nodemon');
+import {MenuAppBar} from '../components/menuAppBar.jsx'
 
-    return(
-        <h1>This is the Home Page!</h1>
-    );
+export function Home() {
+  return (
+    <>
+      <MenuAppBar title="Menu principal" variant="h6" />
+      <h1>This home page!</h1>
+    </>
+  )
 }

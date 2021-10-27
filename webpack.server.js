@@ -1,24 +1,24 @@
-const path = require('path');
-const nodeExternals = require('webpack-node-externals');
+const path = require('path')
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-    entry: './server.js',
+  entry: './server.js',
 
-    target: 'node',
+  target: 'node',
 
-    externals: [nodeExternals()],
+  externals: [nodeExternals()],
 
-    output: {
-        path: path.resolve(),
-        filename: 'index.js'
-    },
+  output: {
+    path: path.resolve(),
+    filename: 'index.js',
+  },
 
-    module: {
-        rules: [
-            {
-                test: /\.js|jsx$/,
-                use: 'babel-loader'
-            }
-        ]
-    }
-};
+  module: {
+    rules: [
+      {
+        test: /\.js|jsx$/,
+        use: 'babel-loader',
+      },
+    ],
+  },
+}
