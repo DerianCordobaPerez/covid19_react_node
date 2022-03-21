@@ -1,10 +1,9 @@
-import {MenuAppBar} from '../components/menuAppBar.jsx'
+import Layout from '../components/layout.jsx'
 
-export function Home() {
+export default function Home() {
   return (
-    <>
-      <MenuAppBar title="Menu principal" variant="h6" />
+    <Layout>
       <h1>This home page!</h1>
-    </>
+    </Layout>
   )
 }
